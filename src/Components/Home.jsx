@@ -7,7 +7,7 @@ const fetcher = async (url) => await axios.get(url).then((res) => res.data);
 export default function Home(props) {
 
   const { data, error, isLoading } = useSWR(
-    "https://fakestoreapi.com/products",
+    "your url here",
     fetcher
   );
 
